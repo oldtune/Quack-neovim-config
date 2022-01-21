@@ -1,0 +1,21 @@
+-- " enter command mode without using Shift key
+-- nnoremap ; :
+-- xnoremap ; :
+
+-- nnoremap q; q:
+
+-- " Navigation
+-- nnoremap j <Down>
+-- nnoremap h <Left>
+-- nnoremap k <Up>
+-- nnoremap l <Right>
+
+-- " jk as ESC
+-- inoremap jk <Esc>
+
+-- " Turn the current word into upper case
+-- inoremap <c-u> <Esc>viwUea
+
+-- " Turn the current word into lower case
+-- inoremap <c-l> <Esc>viwuea
+
