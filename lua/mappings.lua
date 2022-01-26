@@ -9,3 +9,10 @@ end
 function imap(shortcut, command)
   map('i', shortcut, command)
 end
+
+nmap(';', ':')
+nmap('<Up>', 'k')
+nmap('<Down>', 'j')
+nmap('<Left>','h')
+nmap('<Right>','l')
+imap('jk', '<Esc>')

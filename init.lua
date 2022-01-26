@@ -1,1 +1,2 @@
+require('mappings')
 require('plugins')
