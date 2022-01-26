@@ -1,6 +1,6 @@
 local dashboard = require"alpha.themes.dashboard"
 math.randomseed(os.time())
-
+print("whatever")
 local function button(sc, txt, keybind, keybind_opts)
   local b = dashboard.button(sc, txt, keybind, keybind_opts)
   b.opts.hl = "Function"

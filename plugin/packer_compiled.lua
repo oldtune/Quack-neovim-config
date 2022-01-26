@@ -68,7 +68,13 @@ end
 
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
-_G.packer_plugins = {}
+_G.packer_plugins = {
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "C:\\Users\\do.tran.STS\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\nvim-treesitter",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter"
+  }
+}
 
 time([[Defining packer_plugins]], false)
 if should_profile then save_profiles() end

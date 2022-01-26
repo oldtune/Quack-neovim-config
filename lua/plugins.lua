@@ -15,17 +15,13 @@ packer.init({
   package_root = util.join_paths(vim.fn.stdpath('data'), 'site', 'pack')
 })
 
-local p = function(name)
-return string.format("require'%s'", name)
-end
-
-local ps = function(name)
-return p(name) .. ".setup()"
-end
-
 --- startup and add configure plugins
-packer.startup(function()
+packer.startup(function(use)
   local use = use
-  use { "goolord/alpha-nvim", config=p"alpha-nvim" }
+  --use { "goolord/alpha-nvim", config = require("alpha-nvim") }
+   use {
+        'nvim-treesitter/nvim-treesitter',
+        run = ':TSUpdate'
+    }
   end
 )
