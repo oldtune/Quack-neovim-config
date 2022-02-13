@@ -23,5 +23,8 @@ packer.startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+    use {"fladson/vim-kitty"}
+    use 'wbthomason/packer.nvim' -- Package manager
+    use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
   end
 )
