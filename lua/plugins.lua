@@ -23,5 +23,15 @@ packer.startup(function(use)
         'nvim-treesitter/nvim-treesitter',
         run = ':TSUpdate'
     }
+    use 'wbthomason/packer.nvim' -- Package manager
+    use 'neovim/nvim-lspconfig' -- Collection of configurations for the built-in LSP client
+	use({
+    'CosmicNvim/cosmic-ui',
+    requires = { 'MunifTanjim/nui.nvim', 'nvim-lua/plenary.nvim' },
+    config = function()
+      require('cosmic-ui').setup()
+    end,
+  })
+  use 'vijaymarupudi/nvim-fzf'
   end
 )
